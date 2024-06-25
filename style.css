@@ -1,0 +1,37 @@
+.plan ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between content */
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.plan ul li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+}
+
+.plan ul li.tick::before {
+    content: "✔";
+    color: green;
+}
+
+.plan ul li.cross::before {
+    content: "✘";
+    color: red;
+}
+
+.plan .price {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.plan .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}

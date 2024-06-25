@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+        .plan {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+        }
+        .plan h2 {
+            margin-top: 0;
+        }
+        .plan ul {
+            list-style: none;
+            padding: 0;
+        }
+        .plan ul li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Add space between content */
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .plan ul li:last-child {
+            border-bottom: none;
+        }
+        .plan ul li::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+        }
+        .plan ul li.tick::before {
+            content: "✔";
+            color: green;
+        }
+        .plan ul li.cross::before {
+            content: "✘";
+            color: red;
+        }
+        .plan .price {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .plan .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Free Plan -->
+        <div class="plan">
+            <h2>Free Plan</h2>
+            <div class="price">USD $0/month</div>
+            <ul>
+                <li class="tick"><span><b>1</b> Advertisement</span></li>
+                <li class="tick"><span><b>3</b> Blogs</span></li>
+                <li class="tick"><span>Image Advertisement</span></li>
+                <li class="cross"><span>Video Advertisement</span></li>
+                <li class="cross"><span>Top visibility</span></li>
+                <li class="cross"><span>Priority support</span></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Starter Plan -->
+        <div class="plan">
+            <h2>Starter Plan</h2>
+            <div class="price">USD $2.50/month</div>
+            <ul>
+                <li class="tick"><span><b>10</b> Advertisement</span></li>
+                <li class="tick"><span><b>30</b> Blogs</span></li>
+                <li class="tick"><span>Image Advertisement</span></li>
+                <li class="cross"><span>Video Advertisement</span></li>
+                <li class="cross"><span>Top visibility</span></li>
+                <li class="cross"><span>Priority support</span></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan">
+            <h2>Premium Plan</h2>
+            <div class="price">USD $4.50/month</div>
+            <ul>
+                <li class="tick"><span><b>20</b> Advertisement</span></li>
+                <li class="tick"><span><b>60</b> Blogs</span></li>
+                <li class="tick"><span>Image Advertisement</span></li>
+                <li class="tick"><span>Video Advertisement</span></li>
+                <li class="cross"><span>Top visibility</span></li>
+                <li class="cross"><span>Priority support</span></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+
+        <!-- Ultimate Plan -->
+        <div class="plan">
+            <h2>Ultimate Plan</h2>
+            <div class="price">USD $5.50/month</div>
+            <ul>
+                <li class="tick"><span><b>40</b> Advertisement</span></li>
+                <li class="tick"><span><b>120</b> Blogs</span></li>
+                <li class="tick"><span>Image Advertisement</span></li>
+                <li class="tick"><span>Video Advertisement</span></li>
+                <li class="tick"><span>Top visibility</span></li>
+                <li class="tick"><span>Priority support</span></li>
+            </ul>
+            <a href="#" class="btn">Subscribe</a>
+        </div>
+    </div>
+</body>
+</html>
